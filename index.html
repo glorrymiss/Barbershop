@@ -411,10 +411,31 @@
         <div class="container box-info">
           <section class="box-online">
             <h2 class="secondary-title t-info">Online-booking</h2>
-            <!--<p class="text-info">Name*</p>
-            <p class="text-info">Phone*</p>
-            <p class="text-info">Message</p>
-            <button class="btn button" type="button">send</button>-->
+            <form class="form-area">
+              <div class="wrap-contact">
+                <input
+                  type="text"
+                  name="online-name"
+                  class="online-input field-input"
+                  placeholder="Name*"
+                  required
+                />
+
+                <input
+                  type="tel"
+                  name="online-tel"
+                  class="online-input field-input"
+                  placeholder="Phone*"
+                  required
+                />
+              </div>
+              <textarea
+                name="online-mess"
+                class="online-text field-input"
+                placeholder="Message"
+              ></textarea>
+              <button class="btn button-online" type="button">send</button>
+            </form>
           </section>
           <section class="box-address">
             <h2 class="secondary-title t-info">Contacts</h2>
@@ -475,46 +496,68 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <form class="modal-form">
-          <p class="text-modal">Personal data</p>
-          <label for="name" class="label-name">Name</label>
-          <div class="box-input">
-            <input type="text" id="name" placeholder="Roman" />
-            <svg class="input-icon" width="20" height="20">
-              <use href="#"></use>
-            </svg>
-          </div>
-          <label for="email" class="label-email">Email</label>
-          <input type="email" id="email" placeholder="barba@gmail.com" />
-          <label for="tel" class="label-tel">Nomber phone</label>
-          <input id="tel" type="tel" placeholder="+380..." />
-          <button type="submit" class="btn button modal-btn">Send</button>
-        </form>
-        <button
-          class="button btn-modal"
-          type="button"
-          class="button"
-          data-modal-close
-        >
+        <button class="button btn-modal" type="button" data-modal-close>
           <svg class="btn-icon" width="30px" height="30px">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <!-- форми -->
+        <form class="modal-form">
+          <div class="wrap-input">
+            <input
+              id="modal-name"
+              type="text"
+              name="modal-name"
+              class="modal-input"
+              placeholder=" "
+            />
+            <label for="modal-name" class="modal-label input-text">name </label>
+          </div>
+          <div class="wrap-input">
+            <input
+              id="modal-tel"
+              type="tel"
+              name="modal-tel"
+              class="modal-input"
+              placeholder=" "
+            />
+            <label for="modal-tel" class="modal-label input-text"
+              >number
+            </label>
+          </div>
+          <div class="wrap-input">
+            <input
+              id="modal-mail"
+              type="email"
+              name="modal-email"
+              class="modal-input"
+              placeholder=" "
+            />
+            <label for="modal-mail" class="modal-label input-text"
+              >email
+            </label>
+          </div>
+
+          <textarea
+            name="modal-comment"
+            class="modal-comment modal-input"
+            placeholder="Comments..."
+          ></textarea>
+          <label class="conditions-label">
+            <input
+              type="checkbox"
+              name="modal-conditions"
+              class="modal-conditions"
+            />
+            <span class="conditions-text"
+              >Agree with
+              <a class="conditions-link link" href="#">Conditions</a></span
+            >
+          </label>
+          <button type="submit" class="btn button btn-modal-form">Send</button>
+        </form>
       </div>
     </div>
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector("[data-modal-open]"),
-          closeModalBtn: document.querySelector("[data-modal-close]"),
-          modal: document.querySelector("[data-modal]"),
-        };
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-        function toggleModal() {
-          refs.modal.classList.toggle("is-hidden");
-        }
-      })();
-    </script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@
   --main-light-color: #ffffff;
   --main-text-color: #9da4bd;
   --color-text-about: #555555;
+  --color-text-form: #757575;
   --accent-color: #ff6c00;
   --box-bg-color: #f7f7f7;
 
@@ -740,6 +741,68 @@ header {
   color: var(--main-dark-color);
 }
 
+/* Online-booking форма*/
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.field-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
+  color: var(--box-bg-color);
+
+  transition: border-color var(--trans), color var(--trans);
+}
+
+.field-input::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: color var(--trans);
+}
+
+.field-input + .field-input::placeholder :hover,
+.field-input + .field-input::placeholder:focus {
+  color: var(--main-light-color);
+}
+
+.field-input:hover,
+.field-input:focus {
+  border-color: var(--main-light-color);
+  color: var(--main-light-color);
+}
+
+.field-input:hover::placeholder,
+.field-input:focus::placeholder {
+  color: var(--main-light-color);
+}
+
+.wrap-contact {
+  display: flex;
+  gap: 30px;
+}
+.online-input {
+  width: 270px;
+  height: 24px;
+}
+
+.online-text {
+  min-height: 76px;
+  resize: none;
+}
+
+.button-online {
+  width: 160px;
+}
+
 /*--MODAL-WINDOW--*/
 
 .backdrop {
@@ -768,11 +831,11 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 650px;
+  width: 528px;
   min-height: 500px;
   border-radius: 10px;
-  background-color: var(--main-light-color);
-  padding: 40px;
+  background-color: var(--color-text-about);
+  padding: 100px 60px;
 
   transition: transform var(--trans);
 }
@@ -794,6 +857,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-text-about);
 
   transition: background-color var(--trans);
 }
@@ -803,36 +867,138 @@ header {
   background-color: var(--accent-color);
 }
 
-.text-modal {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
+/* форма в модадці */
 
-  color: var(--main-dark-color);
-
-  margin-bottom: 12px;
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
-.modal-form input {
-  display: block;
+.wrap-input {
+  position: relative;
   width: 100%;
-  padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 16px;
-
-  border: 1px solid var(--color-text-about);
-
-  transition: border var(--trans);
 }
 
-.modal-form input:hover,
-.modal-form input:focus {
-  border: 1px solid var(--accent-color);
+.modal-input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid var(--main-text-color);
   outline: transparent;
+  color: var(--box-bg-color);
+  font-size: 14px;
+
+  transition: border-color var(--trans), color var(--trans);
 }
 
-.modal-btn {
-  color: var(--main-dark-color);
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--box-bg-color);
+}
+
+.modal-input:hover + .input-text,
+.modal-input:focus + .input-text {
+  color: var(--box-bg-color);
+}
+
+.modal-input:focus + .input-text,
+.modal-input:not(:placeholder-shown) + .input-text {
+  transform: translateY(-80%);
+}
+
+.modal-label {
+  position: absolute;
+  top: -130%;
+}
+
+.input-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+  transition: color var(--trans), transform var(--trans);
+}
+
+/* коментар */
+
+.modal-comment {
+  resize: none;
+  min-height: 100px;
+}
+
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--box-bg-color);
+}
+
+.conditions-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+.modal-conditions {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-60%);
+  display: block;
+  width: 20px;
+  height: 17px;
+  border: 2px solid var(--color-btn-name);
+  background-color: var(--main-text-color);
+  border-radius: 2px;
+}
+
+.modal-conditions:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+.conditions-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin-left: 15%;
+  padding-right: 20px;
+}
+
+.conditions-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--accent-color);
+
+  color: var(--box-bg-color);
+  transition: color var(--trans);
+}
+
+.conditions-link:hover,
+.conditions-link:focus {
+  color: var(--accent-color);
+}
+
+.btn-modal-form {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
 }
