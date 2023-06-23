@@ -1,0 +1,59 @@
+/* Online-booking форма*/
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.field-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
+  color: var(--box-bg-color);
+
+  transition: border-color var(--trans), color var(--trans);
+  &:hover,
+  &:focus {
+    border-color: var(--main-light-color);
+    color: var(--main-light-color);
+  }
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color var(--trans);
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: var(--main-light-color);
+  }
+}
+
+.field-input + .field-input::placeholder :hover,
+.field-input + .field-input::placeholder:focus {
+  color: var(--main-light-color);
+}
+
+.wrap-contact {
+  display: flex;
+  gap: 30px;
+}
+.online-input {
+  width: 270px;
+  height: 24px;
+}
+
+.online-text {
+  min-height: 76px;
+  resize: none;
+}
+
+.button-online {
+  width: 160px;
+}

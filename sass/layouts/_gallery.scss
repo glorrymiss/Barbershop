@@ -1,0 +1,17 @@
+/*--section-gallery*/
+.top-gallary {
+  margin-bottom: 44px;
+}
+
+.menu-gallery {
+  display: flex;
+  gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.gallery-item img {
+  width: 100%;
+}

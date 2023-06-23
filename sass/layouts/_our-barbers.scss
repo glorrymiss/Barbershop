@@ -1,0 +1,69 @@
+/*--section-our-barbers--*/
+
+.section-barbers {
+  background-color: #e5e5e5;
+}
+
+.t-berbers {
+  margin-bottom: 44px;
+}
+
+.menu-barbers {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.description {
+  padding-top: 30px;
+}
+
+.name-title {
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+
+  color: var(--main-dark-color);
+}
+
+.text-barb {
+  font-size: var(--secondary-font-size);
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+
+  color: var(--accent-color);
+}
+
+.menu-barb-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc-barb-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--main-light-color);
+}
+
+.soc-icon {
+  fill: var(--main-dark-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

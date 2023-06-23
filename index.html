@@ -11,10 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="./css/styles.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--header-->
+    <!-- header -->
     <header class="header">
       <div class="container container-box">
         <nav class="navigation">
@@ -39,15 +47,17 @@
               <a class="header-link link" href="/contacts">Contacts</a>
             </li>
           </ul>
+
+          <div class="box-header">
+            <a class="number-phone link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="btn button" type="button" data-modal-open>
+              Online-booking
+            </button>
+          </div>
+          <button type="button" class="btn-menu-mobile"></button>
         </nav>
-        <div class="box-header">
-          <a class="number-phone link" href="tel:+380441111111"
-            >+38 044 111 11 11</a
-          >
-          <button class="btn button" type="button" data-modal-open>
-            Online-booking
-          </button>
-        </div>
       </div>
     </header>
     <main>
@@ -77,52 +87,94 @@
             </ul>
           </div>
           <div class="box-hero">
-            <p class="text-top hero">A hair salon for men in Kyiv</p>
-            <h1 class="main-title">BarberShop</h1>
-            <p class="text-hero-bottom">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
-            </p>
+            <div class="wrap-text">
+              <p class="text-top hero">A hair salon for men in Kyiv</p>
+              <h1 class="main-title">BarberShop</h1>
+              <p class="text-hero-bottom">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
+            </div>
           </div>
-          <!--<ul class="hero-menu list">
+          <ul class="hero-menu list">
             <li class="hero-item">
               <a class="hero-nav link" href="#">Back</a>
             </li>
             <li class="hero-item">
               <a class="hero-nav link" href="#">Forward</a>
             </li>
-          </ul>-->
+          </ul>
         </div>
       </section>
       <!--section-about-->
       <section class="section-about section">
         <div class="container box-about">
-          <ul class="menu-about list">
-            <li class="about-item">
-              <img
-                class="photo-about"
-                src="./images/barber.jpg"
-                alt="Men`s beard"
-                width="270"
-                height="445"
-              />
-            </li>
-            <li class="about-item">
-              <img
-                class="photo-about"
-                src="./images/barber-2.jpg"
-                alt="Men`s haircut"
-                width="270"
-                height="445"
-              />
-            </li>
-          </ul>
+          <div class="about-box-img">
+            <ul class="menu-about list">
+              <li class="about-item">
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                    srcet="./images/about/about-barba-desk-webp.webp 1x, ./images/about/about-barba@2-desk-webp.webp 2x"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    type="image/jpg"
+                    srcet="./images/about/about-barba-desk.jpg 1x, ./images/about/about-barba@2-desk.jpg 2x"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    type="image/webp"
+                    srcet="./images/about/about-barba.webp 1x, ./images/about/about-barba@2.webp 2x"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    type="image/jpg"
+                    srcet="./images/about/about-barba-desk.jpg 1x, ./images/about/about-barba@2.jpg 2x"
+                  />
+                  <img
+                    class="photo-about"
+                    src="./images/about/about-barba-desk.jpg"
+                    alt="Men`s beard"
+                  />
+                </picture>
+              </li>
+              <li class="about-item">
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                    srcet="./images/about/about-headstyle-desk-webp.webp 1x, ./images/about/about-headstyle@2-desk-webp.webp 2x"
+                  />
+                  <source
+                    media="(min-width:1200px)"
+                    type="image/jpg"
+                    srcet="./images/about/about-headstyle-desk.jpg 1x, ./images/about/about-headstyle@2-desk.jpg 2x"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    type="image/jpg"
+                    srcet="./images/about/about-headstyle.webp 1x, ./images/about/about-headstyle@2.webp 2x"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    type="image/jpg"
+                    srcet="./images/about/about-headstyle.jpg 1x, ./images/about/about-headstyle@2.jpg 2x"
+                  />
+                  <img
+                    class="photo-about"
+                    src="./images/about/about-headstyle-desk.jpg"
+                    alt="Men`s haircut"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
 
           <div class="about-box-text">
             <p class="text-top about">About</p>
-            <h2 class="secondary-title t-about">
-              Best Barbershop in your city
-            </h2>
+            <h2 class="secondary-title-about">Best Barbershop in your city</h2>
             <p class="text-about-midlle">
               If you want to add more confidence to your image, you should
               definitely visit us.
@@ -141,7 +193,7 @@
         </div>
       </section>
       <!--section-services-->
-      <section class="section-services section">
+      <!-- <section class="section-services section">
         <div class="container">
           <p class="text-top services">Spend your time with the best masters</p>
           <h2 class="secondary-title t-services">Services and prices</h2>
@@ -188,8 +240,8 @@
           </button>
         </div>
       </section>
-      <!--section-result-->
-      <section class="section-resalt section">
+      <--section-result-->
+      <!-- <section class="section-resalt section">
         <div class="container box-result">
           <ul class="menu-resalt list">
             <li class="result-item">
@@ -229,9 +281,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--section-our-barbers-->
-      <section class="section-barbers section">
+      <!-- <section class="section-barbers section">
         <div class="container">
           <p class="text-top">For true enjoyers of the atmosphere</p>
           <h2 class="secondary-title t-barbers">Our barbers</h2>
@@ -364,9 +416,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION-GALLERY-->
-      <section class="section-gallery section">
+      <!-- <section class="section-gallery section">
         <div class="container">
           <p class="text-top top-gallery">In Latin, "barba" means "beard"</p>
           <h2 hidden>Gallery</h2>
@@ -405,9 +457,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--section-information-->
-      <div class="section-info section">
+      <!-- <div class="section-info section">
         <div class="container box-info">
           <section class="box-online">
             <h2 class="secondary-title t-info">Online-booking</h2>
@@ -466,10 +518,10 @@
             <p class="text-number">Every day from 9:00 to 22:00</p>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
     <!--footer-->
-    <footer class="section-footer">
+    <!-- <footer class="section-footer">
       <div class="container box-footer">
         <p class="copy">&#169; Copyright 2020</p>
         <ul class="footer-menu-soc list">
@@ -500,9 +552,9 @@
           <svg class="btn-icon" width="30px" height="30px">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
-        </button>
-        <!-- форми -->
-        <form class="modal-form">
+        </button> -->
+    <!-- форми -->
+    <!-- <form class="modal-form">
           <div class="wrap-input">
             <input
               id="modal-name"
@@ -555,9 +607,293 @@
             >
           </label>
           <button type="submit" class="btn button btn-modal-form">Send</button>
-        </form>
-      </div>
-    </div>
-    <script src="js/modal.js"></script>
+        </form> -->
+    <!-- </div>
+    </div> -->
+    <!-- <section class="main-sale">
+      <h2 class="main-sale__title">Sale</h2>
+
+      <ul class="sale-menu">
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-1-webp.webp    1x,
+                  ./img-sale/sale-element-1-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-1.jpg    1x,
+                  ./img-sale/sale-element-1-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-1.jpg"
+                alt="Headset"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">Xiberia K9 PRO PC Headset</h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">65.14 USD</span
+                ><span class="box-prices__new-price">55.14 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-2-webp.webp    1x,
+                  ./img-sale/sale-element-2-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-2.jpg    1x,
+                  ./img-sale/sale-element-2-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-2.jpg"
+                alt="Gaming headset"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                G95 Light Surround Gaming Headset
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">72.78 USD</span
+                ><span class="box-prices__new-price">51.78 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-3-webp.webp    1x,
+                  ./img-sale/sale-element-3-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-3.jpg    1x,
+                  ./img-sale/sale-element-3-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-3.jpg"
+                alt="Gaming headset"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                G95 Light Surround Gaming Headset
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">78.98 USD</span
+                ><span class="box-prices__new-price">50.98 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-4-webp.webp    1x,
+                  ./img-sale/sale-element-4-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-4.jpg    1x,
+                  ./img-sale/sale-element-4-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-4.jpg"
+                alt="Gaming headset"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                Logitech G230 Stereo Gaming Headset
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">160.00 USD</span
+                ><span class="box-prices__new-price">110.00 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-5-webp.webp    1x,
+                  ./img-sale/sale-element-5-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-5.jpg    1x,
+                  ./img-sale/sale-element-5-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-5.jpg"
+                alt="Mechanical keyboard"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                RGB LED Backlit Mechanical Keyboard
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">156.00 USD</span
+                ><span class="box-prices__new-price">116.00 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-6-webp.webp    1x,
+                  ./img-sale/sale-element-6-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-6.jpg    1x,
+                  ./img-sale/sale-element-6-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-6.jpg"
+                alt="Mechanical keyboard"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                K569 RGB LED Backlit Mechanical Keyboard
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">156.98 USD</span
+                ><span class="box-prices__new-price">112.16 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-7-webp.webp    1x,
+                  ./img-sale/sale-element-7-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-7.jpg    1x,
+                  ./img-sale/sale-element-7-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-7.jpg"
+                alt="Wireless mouse"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                Malloom 1200 DPI 2.4Ghz Wireless Mouse
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">44.24 USD</span
+                ><span class="box-prices__new-price">29.93 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale-menu__item">
+          <a class="sale-menu__link" href="./order.html">
+            <picture class="sale-menu__img">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img-sale/sale-element-8-webp.webp    1x,
+                  ./img-sale/sale-element-8-2x-webp.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img-sale/sale-element-8.jpg    1x,
+                  ./img-sale/sale-element-8-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img-sale/sale-element-8.jpg"
+                alt="Gaming mouse"
+                width="285"
+              />
+            </picture>
+            <div class="wrap-content">
+              <h3 class="wrap-content__title">
+                DARSHION 3200 DPI MZ-17 Gaming Mouse
+              </h3>
+              <div class="box-prices">
+                <span class="box-prices__old-price">48.00 USD</span
+                ><span class="box-prices__new-price">32.00 USD</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="./accessories.html">View all</a>
+    </section> -->
+    <!-- <script src="js/modal.js"></script> -->
+    <!-- <script src="javascript/script-1.js"></script> -->
+
+    <!-- <script src="javascript/array.js"></script> -->
+    <!-- <script src="javascript/object.js"></script> -->
+    <!-- <script src="javascript/callback.js"></script> -->
+    <!-- <script src="javascript/proto.js"></script> -->
+    <script src="javascript/work-with-mentor.js"></script>
   </body>
 </html>

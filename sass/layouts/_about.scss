@@ -1,0 +1,89 @@
+/*--section-about--*/
+
+.section-about {
+  background-color: var(--main-light-color);
+}
+
+.box-about {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.about-box-text {
+  @media screen and (min-width: 768px) {
+    max-width: 50%;
+  }
+}
+
+.menu-about {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.about-item {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.photo-about {
+  height: 100%;
+}
+
+.about {
+  color: var(--main-dark-color);
+  @media screen and (min-width: 768px) {
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 740px;
+  }
+}
+
+.text-about-midlle {
+  margin-bottom: 20px;
+  color: var(--color-text-about);
+  font-size: 3.3vw;
+  @media screen and (min-width: 480px) {
+    @include font(16px, 1.62, 0.02em);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(18px, 1.67, 0.02em);
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 470px;
+  }
+}
+
+.text-about-bottom {
+  font-size: 3vw;
+  margin-bottom: 40px;
+  color: var(--color-text-about);
+
+  @media screen and (min-width: 480px) {
+    @include font(var(--secondary-font-size), 1.86, 0.02em);
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 70px;
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 42px;
+    max-width: 470px;
+  }
+}
+
+.btn-second {
+  color: var(--main-dark-color);
+}
