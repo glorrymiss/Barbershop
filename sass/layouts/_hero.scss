@@ -1,11 +1,10 @@
 /*--hero--*/
 
 .hero-container {
-  width: 480px;
+  // width: 480px;
   padding: 0;
   display: block;
   @media screen and (min-width: 768px) {
-    width: 768px;
     display: flex;
     padding: 0 26px 0 39px;
   }
@@ -94,9 +93,6 @@
         rgba(25, 28, 38, 0.2)
       ),
       url(../images/hero/hero-bg-desk.jpg);
-
-    background-repeat: no-repeat;
-    background-size: 580px 680px;
   }
 }
 
@@ -104,6 +100,8 @@
   margin-left: 31px;
   @media screen and (min-width: 768px) {
     margin-left: 100px;
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
 

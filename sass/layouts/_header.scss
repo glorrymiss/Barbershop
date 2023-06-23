@@ -4,8 +4,8 @@ header {
   position: absolute;
   width: 100%;
   padding: 0;
+  // padding-top: 20px;
   @media screen and (min-width: 768px) {
-    // padding-top: 20px;
     padding-bottom: 32px;
   }
 }
@@ -21,25 +21,31 @@ header {
   }
   @media screen and (min-width: 768px) {
     position: absolute;
-    margin-right: 0px;
+    // margin-right: 0px;
   }
 }
 
 .navigation {
-  display: none;
+  display: flex;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: right;
   }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
-
-.menu-header {
+Ї .menu-header {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 20px;
     margin-right: 45px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+    margin-right: 254px;
   }
 }
 

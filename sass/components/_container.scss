@@ -5,24 +5,20 @@
 //   margin: 0 auto;
 // }
 
-@media screen and (min-width: 480px) {
-  .container {
+.container {
+  @media screen and (min-width: 480px) {
     width: 480px;
     padding-left: 31px;
     padding-right: 31px;
+    margin: 0 auto;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
+  @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 40px;
     padding-right: 40px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0 15px;
   }
 }
