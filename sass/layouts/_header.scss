@@ -72,6 +72,9 @@ header {
 }
 
 .header-link {
+  // display: none;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
   font-weight: 600;
   font-size: var(--font-size-header);
   line-height: 1.33;
@@ -87,6 +90,7 @@ header {
     color: var(--accent-color);
   }
 }
+// }
 
 .box-header {
   display: none;
@@ -97,6 +101,9 @@ header {
     align-items: center;
     margin-top: 36px;
     gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
   }
 }
 
