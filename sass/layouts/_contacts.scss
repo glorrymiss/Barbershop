@@ -1,36 +1,71 @@
 /*--section-information--*/
 
 .section-info {
-  padding-top: 130px;
   background-color: #191c26;
-  background-image: url(../images/bg-contacts.png);
+  @media screen and (max-width: 767.5px) {
+  background-image: url(../images/bg-contacts-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  }
+  @media screen and (min-width: 1600px) {
+  background-image: url(../images/bg-contacts-desktop.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: calc(50% - 15px) 100%;
-  max-width: 1600px;
-  margin: 0 auto;
+  background-size: calc(50% - 15px);
+}
 }
 
 .box-info {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media screen and (min-width: 1600px) {
+    flex-direction: row;
+  }
+
 }
 
 .box-online {
-  width: calc(50% - 15px);
+  @media screen and (min-width: 1600px) {
+    width: calc(50% - 15px);
+    padding-top: 130px;
+    padding-bottom: 110px;
+  }
+ 
 }
 
 .box-address {
-  width: calc(50% - 15px);
-  padding-left: 100px;
+  @media screen and (min-width: 768px) and (max-width:1599.5px) {
+    background-image: url(../images/bg-contacts-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1600px) {
+    padding-top: 130px;
+    padding-bottom: 110px; 
+  }
+
 }
 
 .t-info {
   color: var(--main-light-color);
-  margin-bottom: 40px;
+  margin-bottom: 44px;
+  font-size: 42px;
+  text-align: center;
+  min-width: 418px;
+  @media screen and (min-width: 768px) {
+    text-align:start;
+  }
 }
 
 .menu-address {
+  margin-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    }
+  @media screen and (min-width: 1600px) {
   margin-bottom: 70px;
+  }
 }
 
 .text-info {
@@ -69,16 +104,31 @@
 
 .map {
   font-weight: 700;
-}
+  }
 
+.tablet-size{
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 200px;
+    }
+}
 .text-hours {
   font-weight: 600;
   font-size: var(--main-font-size);
   line-height: 1.36;
   text-transform: uppercase;
   margin-bottom: 20px;
-
   color: var(--main-light-color);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &::before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.40);
+  }
 }
 
 .text-number {
@@ -88,3 +138,19 @@
 
   color: var(--main-text-color);
 }
+
+.wrap-tablet-contacts{
+  @media screen and (min-width: 768px) {
+   display: flex;
+   justify-content: space-between;
+    }
+    @media screen and (min-width: 1600px) {
+      display: block;
+       }
+}
+
+.wrap-hours{
+  @media screen and (min-width: 768px) {
+   margin-right: 120px;
+     }
+    }

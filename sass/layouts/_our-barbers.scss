@@ -4,17 +4,28 @@
   background-color: #e5e5e5;
 }
 
-.t-berbers {
+.t-barbers{
+  font-size: 42px;
   margin-bottom: 44px;
 }
 
 .menu-barbers {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 64px;
+  @media screen and (min-width: 768px)  {
+    align-items: center;
+  }
+  @media screen and (min-width: 1600px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  @media screen and (min-width: 1600px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .description {

@@ -31,6 +31,7 @@
               <use href="./images/icons.svg#icon-logo-barber"></use>
             </svg>
           </a>
+          <button type="button" class="btn-menu-mobile"></button>
           <ul class="menu-header list">
             <li class="header-item">
               <a class="header-link link" href="/about">About</a>
@@ -56,7 +57,6 @@
               Online-booking
             </button>
           </div>
-          <button type="button" class="btn-menu-mobile"></button>
         </nav>
       </div>
     </header>
@@ -112,59 +112,59 @@
           <div class="about-box-img">
             <ul class="menu-about list">
               <li class="about-item">
-                <picture>
+                <picture class="picture-photo">
                   <source
-                    media="(min-width:1200px)"
+                    media="(min-width:1600px)"
                     type="image/webp"
-                    srcet="./images/about/about-barba-desk-webp.webp 1x, ./images/about/about-barba@2-desk-webp.webp 2x"
+                    srcset="./images/about/about-barba-desk-webp.webp 1x, ./images/about/about-barba@2-desk-webp.webp 2x"
                   />
                   <source
-                    media="(min-width:1200px)"
+                    media="(min-width:1600px)"
                     type="image/jpg"
-                    srcet="./images/about/about-barba-desk.jpg 1x, ./images/about/about-barba@2-desk.jpg 2x"
+                    srcset="./images/about/about-barba-desk.jpg 1x, ./images/about/about-barba@2-desk.jpg 2x"
                   />
                   <source
                     media="(min-width:768px)"
                     type="image/webp"
-                    srcet="./images/about/about-barba.webp 1x, ./images/about/about-barba@2.webp 2x"
+                    srcset="./images/about/about-barba.webp 1x, ./images/about/about-barba@2.webp 2x"
                   />
                   <source
                     media="(min-width:768px)"
                     type="image/jpg"
-                    srcet="./images/about/about-barba-desk.jpg 1x, ./images/about/about-barba@2.jpg 2x"
+                    srcset="./images/about/about-barba.jpg 1x, ./images/about/about-barba@2.jpg 2x"
                   />
                   <img
                     class="photo-about"
-                    src="./images/about/about-barba-desk.jpg"
+                    src="./images/about/about-barba.jpg"
                     alt="Men`s beard"
                   />
                 </picture>
               </li>
               <li class="about-item">
-                <picture>
+                <picture class="picture-photo">
                   <source
-                    media="(min-width:1200px)"
+                    media="(min-width:1600px)"
                     type="image/webp"
-                    srcet="./images/about/about-headstyle-desk-webp.webp 1x, ./images/about/about-headstyle@2-desk-webp.webp 2x"
+                    srcset="./images/about/about-headstyle-desk-webp.webp 1x, ./images/about/about-headstyle@2-desk-webp.webp 2x"
                   />
                   <source
-                    media="(min-width:1200px)"
+                    media="(min-width:1600px)"
                     type="image/jpg"
-                    srcet="./images/about/about-headstyle-desk.jpg 1x, ./images/about/about-headstyle@2-desk.jpg 2x"
+                    srcset="./images/about/about-headstyle-desk.jpg 1x, ./images/about/about-headstyle@2-desk.jpg 2x"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    type="image/webp"
+                    srcset="./images/about/about-headstyle.webp 1x, ./images/about/about-headstyle@2.webp 2x"
                   />
                   <source
                     media="(min-width:768px)"
                     type="image/jpg"
-                    srcet="./images/about/about-headstyle.webp 1x, ./images/about/about-headstyle@2.webp 2x"
-                  />
-                  <source
-                    media="(min-width:768px)"
-                    type="image/jpg"
-                    srcet="./images/about/about-headstyle.jpg 1x, ./images/about/about-headstyle@2.jpg 2x"
+                    srcset="./images/about/about-headstyle.jpg 1x, ./images/about/about-headstyle@2.jpg 2x"
                   />
                   <img
                     class="photo-about"
-                    src="./images/about/about-headstyle-desk.jpg"
+                    src="./images/about/about-headstyle.jpg"
                     alt="Men`s haircut"
                   />
                 </picture>
@@ -193,7 +193,7 @@
         </div>
       </section>
       <!--section-services-->
-      <!-- <section class="section-services section">
+       <section class="section-services section">
         <div class="container">
           <p class="text-top services">Spend your time with the best masters</p>
           <h2 class="secondary-title t-services">Services and prices</h2>
@@ -240,33 +240,32 @@
           </button>
         </div>
       </section>
-      <--section-result-->
-      <!-- <section class="section-resalt section">
+      <!--section-result-->
+       <section class="section-result section">
         <div class="container box-result">
           <ul class="menu-resalt list">
-            <li class="result-item">
+            <li class="result-item num-one">
               <div class="box-contant">
                 <span class="numeric">600</span>
                 <p class="add">Satisfied customers per day</p>
               </div>
             </li>
-            <li class="result-item">
+            <li class="result-item num-two">
               <div class="box-contant">
                 <span class="numeric">50</span>
                 <p class="add">Awards for excellent service</p>
               </div>
             </li>
-            <li class="result-item">
+            <li class="result-item num-three">
               <div class="box-contant">
                 <span class="numeric">20</span>
                 <p class="add">
-                  Kyiv’s best <br />
-                  barbers
+                  Kyiv’s best barbers
                 </p>
               </div>
             </li>
-            <li class="result-item">
-              <div class="box-contant">
+            <li class="result-item num-four">
+              <div class="box-contant ">
                 <span class="numeric">100</span>
                 <p class="add">Gifts for regular customers</p>
               </div>
@@ -281,21 +280,67 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section> 
       <!--section-our-barbers-->
-      <!-- <section class="section-barbers section">
+      <section class="section-barbers section">
         <div class="container">
           <p class="text-top">For true enjoyers of the atmosphere</p>
           <h2 class="secondary-title t-barbers">Our barbers</h2>
           <ul class="menu-barbers list">
             <li class="barbers-item">
-              <img
-                src="./images/barber-work-1.jpg"
+             <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/barbers/barber-first-desktop.webp 1x,
+                  ./images/barbers/barber-first-desktop@2x.webp 2x,
+                "
+              >
+              <source
+                media="(min-width:1600px)"
+                srcset="   
+                ./images/barbers/barber-first-desktop.jpg 1x,
+                ./images/barbers/barber-first-desktop@2x.jpg 2x,
+                "
+              >
+              <source
+              media="(min-width:768px)"
+              type="image/webp"
+              srcset="
+                ./images/barbers/barber-first-tablet.webp 1x,
+                ./images/barbers/barber-first-tablet@2x.webp 2x,
+              "
+            >
+            <source
+              media="(min-width:768px)"
+              srcset="   
+              ./images/barbers/barber-first-tablet.jpg 1x,
+              ./images/barbers/barber-first-tablet@2x.jpg 2x,
+              "
+            >
+            <source
+            media="(max-width:767px)"
+            type="image/webp"
+            srcset="
+              ./images/barbers/barber-first-mobile.webp 1x,
+              ./images/barbers/barber-first-mobile@2x.webp 2x,
+            "
+          >
+          <source
+            media="(max-width:767px)"
+            srcset="   
+            ./images/barbers/barber-first-mobile.jpg 1x,
+            ./images/barbers/barber-first-mobile@2x.jpg 2x,
+            "
+          >
+                <img
+                src="./images/barbers/barber-work-1.jpg"
                 alt="Barber does men`s haircut"
-                width="370"
-                height="346"
-              />
-              <div class="description">
+            >
+              </picture>
+           
+             <div class="description">
                 <h3 class="name-title">John Smith</h3>
                 <p class="text-barb">Extreme Barber</p>
                 <ul class="menu-barb-soc list">
@@ -331,13 +376,58 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/barber-work-2.jpg"
-                alt="Barber does men`s haircut"
-                width="370"
-                height="346"
+              <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/barbers/barber-second-desktop.webp 1x,
+                  ./images/barbers/barber-second-desktop@2x.webp 2x,
+                "
               />
-              <div class="description">
+              <source
+                media="(min-width:1600px)"
+                srcset="   
+                ./images/barbers/barber-second-desktop.jpg 1x,
+                ./images/barbers/barber-second-desktop@2x.jpg 2x,
+                "
+              />
+              <source
+              media="(min-width:768px)"
+              type="image/webp"
+              srcset="
+                ./images/barbers/barber-second-tablet.webp 1x,
+                ./images/barbers/barber-second-tablet@2x.webp 2x,
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="   
+              ./images/barbers/barber-second-tablet.jpg 1x,
+              ./images/barbers/barber-second-tablet@2x.jpg 2x,
+              "
+            />
+            <source
+            media="(max-width:767px)"
+            type="image/webp"
+            srcset="
+              ./images/barbers/barber-second-mobile.webp 1x,
+              ./images/barbers/barber-second-mobile@2x.webp 2x,
+            "
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="   
+            ./images/barbers/barber-second-mobile.jpg 1x,
+            ./images/barbers/barber-second-mobile@2x.jpg 2x,
+            "
+          />
+                <img
+                src="./images/barbers/barber-work-2.jpg"
+                alt="Barber does men`s haircut"
+              />
+              </picture>
+             <div class="description">
                 <h3 class="name-title">Michele Doe</h3>
                 <p class="text-barb">Extreme Barber</p>
                 <ul class="menu-barb-soc list">
@@ -373,13 +463,58 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/barber-work-3.jpg"
-                alt="Barber does men`s haircut"
-                width="370"
-                height="346"
+              <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/barbers/barber-third-desktop.webp 1x,
+                  ./images/barbers/barber-third-desktop@2x.webp 2x,
+                "
               />
-              <div class="description">
+              <source
+                media="(min-width:1600px)"
+                srcset="   
+                ./images/barbers/barber-third-desktop.jpg 1x,
+                ./images/barbers/barber-third-desktop@2x.jpg 2x,
+                "
+              />
+              <source
+              media="(min-width:768px)"
+              type="image/webp"
+              srcset="
+                ./images/barbers/barber-third-tablet.webp 1x,
+                ./images/barbers/barber-third-tablet@2x.webp 2x,
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="   
+              ./images/barbers/barber-third-tablet.jpg 1x,
+              ./images/barbers/barber-third-tablet@2x.jpg 2x,
+              "
+            />
+            <source
+            media="(max-width:767px)"
+            type="image/webp"
+            srcset="
+              ./images/barbers/barber-third-mobile.webp 1x,
+              ./images/barbers/barber-third-mobile@2x.webp 2x,
+            "
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="   
+            ./images/barbers/barber-third-mobile.jpg 1x,
+            ./images/barbers/barber-third-mobile@2x.jpg 2x,
+            "
+          />
+                <img
+                src="./images/barbers/barber-work-3.jpg"
+                alt="Barber does men`s haircut"
+              />
+              </picture>
+             <div class="description">
                 <h3 class="name-title">Alan Black</h3>
                 <p class="text-barb">Extreme Barber</p>
                 <ul class="menu-barb-soc list">
@@ -416,52 +551,234 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--SECTION-GALLERY-->
-      <!-- <section class="section-gallery section">
+      <section class="section-gallery section">
         <div class="container">
           <p class="text-top top-gallery">In Latin, "barba" means "beard"</p>
           <h2 hidden>Gallery</h2>
           <ul class="menu-gallery list">
             <li class="gallery-item">
-              <img
-                src="./images/haircut-1.jpg"
-                alt="Master does haircut"
-                width="270"
-                height="360"
-              />
-            </li>
+              <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/gallery/gallery-photo-one-desktop.webp 1x,
+                  ./images/gallery/gallery-photo-one-desktop@2x.webp 2x,
+                "
+              >
+              <source
+              media="(min-width:1600px)"
+              srcset="
+                ../images/gallery/gallery-photo-one-desktop.jpg 1x,
+                ./images/gallery/gallery-photo-one-desktop@2x.jpg 2x,
+              "
+            >
+            <source
+            media="(min-width:768px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-one-tablet.webp 1x,
+              ./images/gallery/gallery-photo-one-tablet@2x.webp 2x,
+            "
+          >
+          <source
+          media="(min-width:768px)"
+          srcset="
+            ../images/gallery/gallery-photo-one-tablet.jpg 1x,
+            ./images/gallery/gallery-photo-one-tablet@2x.jpg 2x,
+          "
+        >
+        <source
+        media="(max-width:767.5px)"
+        type="image/webp"
+        srcset="
+          ./images/gallery/gallery-photo-one-mobile.webp 1x,
+          ./images/gallery/gallery-photo-one-mobile@2x.webp 2x,
+        "
+      >
+      <source
+      media="(max-width:767.5px)"
+      srcset="
+        ../images/gallery/gallery-photo-one-mobile.jpg 1x,
+        ./images/gallery/gallery-photo-one-mobile@2x.jpg 2x,
+      "
+    >
+    <img
+       src="./images/gallery/gallery-photo-one.jpg"
+        alt="Master does haircut"
+        />
+       </picture>
+    </li>
+    <li class="gallery-item">
+      <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/gallery/gallery-photo-two-desktop.webp 1x,
+                  ./images/gallery/gallery-photo-two-desktop@2x.webp 2x,
+                "
+              >
+              <source
+              media="(min-width:1600px)"
+              srcset="
+                ../images/gallery/gallery-photo-two-desktop.jpg 1x,
+                ./images/gallery/gallery-photo-two-desktop@2x.jpg 2x,
+              "
+            >
+            <source
+            media="(min-width:768px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-two-tablet.webp 1x,
+              ./images/gallery/gallery-photo-two-tablet@2x.webp 2x,
+            "
+          >
+            <source
+            media="(min-width:768px)"
+            srcset="
+              ../images/gallery/gallery-photo-two-tablet.jpg 1x,
+              ./images/gallery/gallery-photo-two-tablet@2x.jpg 2x,
+            "
+          >
+          <source
+            media="(max-width:767.5px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-two-mobile.webp 1x,
+              ./images/gallery/gallery-photo-two-mobile@2x.webp 2x,
+            "
+          >
+            <source
+            media="(max-width:767.5px)"
+            srcset="
+              ../images/gallery/gallery-photo-two-mobile.jpg 1x,
+              ./images/gallery/gallery-photo-two-mobile@2x.jpg 2x,
+            "
+          >
+          <img
+          src="./images/gallery/gallery-photo-two.jpg"
+          alt="Master does beard"
+        />
+        </picture>
+         </li>
             <li class="gallery-item">
-              <img
-                src="./images/beardrcut-1.jpg"
-                alt="Master does beard"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/close-face.jpg"
+              <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/gallery/gallery-photo-three-desktop.webp 1x,
+                  ./images/gallery/gallery-photo-three-desktop@2x.webp 2x,
+                "
+              >
+              <source
+              media="(min-width:1600px)"
+              srcset="
+                ../images/gallery/gallery-photo-three-desktop.jpg 1x,
+                ./images/gallery/gallery-photo-three-desktop@2x.jpg 2x,
+              "
+            >
+            <source
+            media="(min-width:768px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-three-tablet.webp 1x,
+              ./images/gallery/gallery-photo-three-tablet@2x.webp 2x,
+            "
+          >
+            <source
+            media="(min-width:768px)"
+            srcset="
+              ../images/gallery/gallery-photo-three-tablet.jpg 1x,
+              ./images/gallery/gallery-photo-three-tablet@2x.jpg 2x,
+            "
+          >
+          <source
+            media="(max-width:767.5px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-three-mobile.webp 1x,
+              ./images/gallery/gallery-photo-three-mobile@2x.webp 2x,
+            "
+          >
+            <source
+            media="(max-width:767.5px)"
+            srcset="
+              ../images/gallery/gallery-photo-three-mobile.jpg 1x,
+              ./images/gallery/gallery-photo-three-mobile@2x.jpg 2x,
+            "
+          >
+                <img
+                src="./images/gallery/gallery-photo-three.jpg"
                 alt="Master steams the face"
-                width="270"
-                height="360"
               />
+              </picture>
+             
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/haircut-2.jpg"
+              <picture>
+                <source
+                media="(min-width:1600px)"
+                type="image/webp"
+                srcset="
+                  ./images/gallery/gallery-photo-four-desktop.webp 1x,
+                  ./images/gallery/gallery-photo-four-desktop@2x.webp 2x,
+                "
+              >
+              <source
+              media="(min-width:1600px)"
+              srcset="
+                ../images/gallery/gallery-photo-four-desktop.jpg 1x,
+                ./images/gallery/gallery-photo-four-desktop@2x.jpg 2x,
+              "
+            >
+            <source
+            media="(min-width:768px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-four-tablet.webp 1x,
+              ./images/gallery/gallery-photo-four-tablet@2x.webp 2x,
+            "
+          >
+            <source
+            media="(min-width:768px)"
+            srcset="
+              ../images/gallery/gallery-photo-four-tablet.jpg 1x,
+              ./images/gallery/gallery-photo-four-tablet@2x.jpg 2x,
+            "
+          >
+          <source
+            media="(max-width:767.5px)"
+            type="image/webp"
+            srcset="
+              ./images/gallery/gallery-photo-four-mobile.webp 1x,
+              ./images/gallery/gallery-photo-four-mobile@2x.webp 2x,
+            "
+          >
+            <source
+            media="(max-width:767.5px)"
+            srcset="
+              ../images/gallery/gallery-photo-four-mobile.jpg 1x,
+              ./images/gallery/gallery-photo-four-mobile@2x.jpg 2x,
+            "
+          >
+                <img
+                src="./images/gallery/gallery-photo-four.jpg"
                 alt="Master does haircut"
-                width="270"
-                height="360"
               />
+              </picture>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--section-information-->
-      <!-- <div class="section-info section">
-        <div class="container box-info">
-          <section class="box-online">
+     <div class="section-info">
+        <div class="box-info">
+          <section class="box-online section">
+            <div class="container">
             <h2 class="secondary-title t-info">Online-booking</h2>
             <form class="form-area">
               <div class="wrap-contact">
@@ -488,12 +805,15 @@
               ></textarea>
               <button class="btn button-online" type="button">send</button>
             </form>
+          </div>
           </section>
-          <section class="box-address">
+          <section class="box-address section">
+            <div class="container">
             <h2 class="secondary-title t-info">Contacts</h2>
+            <div class="wrap-tablet-contacts">
             <address class="address">
               <ul class="menu-address list">
-                <li class="address-item">
+                <li class="address-item tablet-size">
                   <a
                     class="address-link map link"
                     href="https://goo.gl/maps/qRy8QNR6hB9hpKWd6"
@@ -514,11 +834,15 @@
                 </li>
               </ul>
             </address>
-            <p class="text-hours">Working hours</p>
-            <p class="text-number">Every day from 9:00 to 22:00</p>
+            <div class="wrap-hours">
+              <p class="text-hours">Working hours</p>
+              <p class="text-number">Every day from 9:00 to 22:00</p>
+            </div>
+          </div>
+          </div>
           </section>
         </div>
-      </div> -->
+      </div> 
     </main>
     <!--footer-->
     <!-- <footer class="section-footer">

@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   gap: 44px;
+  @media screen and (min-width: 1600px) {
+    width: 540px;
+  }
 }
 
 .field-input {
@@ -33,6 +36,7 @@
   &:focus::placeholder {
     color: var(--main-light-color);
   }
+
 }
 
 .field-input + .field-input::placeholder :hover,
@@ -42,11 +46,23 @@
 
 .wrap-contact {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 44px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+
 }
 .online-input {
-  width: 270px;
   height: 24px;
+  font-size: var(--main-font-size);
+   @media screen and (min-width: 768px) {
+    width: 330px;
+  } 
+  @media screen and (min-width: 1600px) {
+    width: 270px;
+  } 
 }
 
 .online-text {
@@ -56,4 +72,8 @@
 
 .button-online {
   width: 160px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+  } 
 }
