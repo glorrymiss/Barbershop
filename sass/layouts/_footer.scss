@@ -1,18 +1,37 @@
 /*footer*/
 .section-footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 44px;
+  padding-bottom: 44px;
   background-color: #f7f7f7;
+  @media screen and (min-width:768px){
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .box-footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 27px;
+  @media screen and (min-width:768px){
+    justify-content: space-between; 
+    flex-direction: row;
+  }
+  
 }
 
 .footer-menu-soc {
   display: flex;
   gap: 40px;
+  margin-left: 170px;
+  align-items: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--main-dark-color);
+  }
 }
 
 .copy,
