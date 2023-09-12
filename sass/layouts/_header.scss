@@ -1,49 +1,33 @@
-/*--header--*/
+// /*--header--*/
 
 header {
   position: absolute;
-  width: 100%;
-  padding-top: 40px;
-  z-index: 3;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 32px;
-  }
+  z-index: 2;
 }
 
 .container-box {
-  align-items: center;
-
-  z-index: 3;
-  @media screen and (max-width: 767.5px) {
-    display: flex;
-    justify-content: space-between;
+  @media screen and (min-width: 1600px) {
+    padding-left: 215px;
+    padding-right: 200px;
   }
+
 }
 
 .navigation {
   display: flex;
-  @media screen and (max-width: 480px){
-  position: absolute;
- justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  gap:270px;
 
-  width: 100%;
-}
+  margin:40px 40px 0 22px;
   @media screen and (min-width: 768px) {
-   width: 616px;
-    justify-content: right;
-    gap: 45px;
+    align-items:flex-start;
+    margin-left: 12px;
     margin-right: 0;
-    position: absolute;
-    right: 20px;
+    gap: 0;
   }
   @media screen and (min-width: 1600px) {
-    width: 1070px;
-   justify-content: start;
-   gap: 254px;
-   left: 360px;
+    margin-left:0;
+    margin-top: 32px;
   }
 }
 
@@ -52,29 +36,22 @@ header {
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 20px;
-    position: absolute;
-    left:20px;
-    top:12px;
-  }
-  @media screen and (min-width: 1200px) {
-    gap: 30px;
-    position: relative;
-  }
-}
-.logo {
-  display: block;
-  position: absolute;
-  top: 40px;
-  left: 22px;
-  @media screen and (min-width: 768px) {
-   top: 32px;
-   left: 11px;
+    margin-right:60px;
+    margin-top: 14px;
   }
   @media screen and (min-width: 1600px) {
-   left:215px;
-   }
+    gap: 30px;
+    margin-right:230px;
+  }
 }
 
+
+.logo{
+  margin-right: 80px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 110px;
+  }
+}
 
 .logo-svg {
   fill: var(--main-light-color);
@@ -95,8 +72,6 @@ header {
 
   color: var(--main-light-color);
 
-  padding-top: 52px;
-
   transition: color var(--trans);
   &:hover,
   &:focus {
@@ -109,9 +84,7 @@ header {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
-    gap: 8px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -134,7 +107,7 @@ header {
     color: var(--accent-color);
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 43px;
+    margin-right: 32px;
   }
 }
 
@@ -144,10 +117,6 @@ header {
   height: 40px;
   background-color: transparent;
   border: none;
-  position: absolute;
-  top: 10px;
-  left: 380px;
-  margin-left: auto;
 
   background-image: url(../images/menu-btn.svg);
   background-size: cover;

@@ -151,58 +151,36 @@ picture {
   background-color: var(--accent-color);
 }
 
-/*--header--*/
 header {
   position: absolute;
-  width: 100%;
-  padding-top: 40px;
-  z-index: 3;
-}
-@media screen and (min-width: 768px) {
-  header {
-    padding-bottom: 32px;
-  }
+  z-index: 2;
 }
 
-.container-box {
-  align-items: center;
-  z-index: 3;
-}
-@media screen and (max-width: 767.5px) {
+@media screen and (min-width: 1600px) {
   .container-box {
-    display: flex;
-    justify-content: space-between;
+    padding-left: 215px;
+    padding-right: 200px;
   }
 }
 
 .navigation {
   display: flex;
-}
-@media screen and (max-width: 480px) {
-  .navigation {
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    width: 100%;
-  }
+  align-items: center;
+  gap: 270px;
+  margin: 40px 40px 0 22px;
 }
 @media screen and (min-width: 768px) {
   .navigation {
-    width: 616px;
-    justify-content: right;
-    gap: 45px;
+    align-items: flex-start;
+    margin-left: 12px;
     margin-right: 0;
-    position: absolute;
-    right: 20px;
+    gap: 0;
   }
 }
 @media screen and (min-width: 1600px) {
   .navigation {
-    width: 1070px;
-    justify-content: start;
-    gap: 254px;
-    left: 360px;
+    margin-left: 0;
+    margin-top: 32px;
   }
 }
 
@@ -213,33 +191,23 @@ header {
   .menu-header {
     display: flex;
     gap: 20px;
-    position: absolute;
-    left: 20px;
-    top: 12px;
+    margin-right: 60px;
+    margin-top: 14px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .menu-header {
     gap: 30px;
-    position: relative;
+    margin-right: 230px;
   }
 }
 
 .logo {
-  display: block;
-  position: absolute;
-  top: 40px;
-  left: 22px;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    top: 32px;
-    left: 11px;
-  }
+  margin-right: 80px;
 }
 @media screen and (min-width: 1600px) {
   .logo {
-    left: 215px;
+    margin-right: 110px;
   }
 }
 
@@ -261,7 +229,6 @@ header {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-light-color);
-  padding-top: 52px;
   transition: color var(--trans);
 }
 .header-link:hover, .header-link:focus {
@@ -275,9 +242,7 @@ header {
   .box-header {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
-    gap: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -301,7 +266,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .number-phone {
-    margin-right: 43px;
+    margin-right: 32px;
   }
 }
 
@@ -311,10 +276,6 @@ header {
   height: 40px;
   background-color: transparent;
   border: none;
-  position: absolute;
-  top: 10px;
-  left: 380px;
-  margin-left: auto;
   background-image: url(../images/menu-btn.svg);
   background-size: cover;
 }
@@ -351,6 +312,11 @@ header {
     display: flex;
     align-items: flex-end;
     padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-soc {
+    margin-right: 0;
   }
 }
 
@@ -400,7 +366,7 @@ header {
   background-color: rgba(25, 28, 38, 0.2);
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: block;
   min-height: 580px;
   position: relative;
@@ -411,6 +377,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .box-hero {
+    background-size: cover;
     margin-right: 20px;
     padding-top: 275px;
     min-height: 680px;
